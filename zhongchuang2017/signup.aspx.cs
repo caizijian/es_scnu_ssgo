@@ -31,17 +31,17 @@ namespace zhongchuang2017.page.identity
                 {
                     string strcmd1;
                     //在用户表中插入
-                    strcmd1 = "insert into user (username,password,type) VALUES ('" + username.Text.Trim() + " ','" + password.Text.Trim() + "','" + 2 + "')";
+                    strcmd1 = "insert into user (username,password,type) VALUES ('" + username.Text.Trim() + " ','" + password.Text.Trim() + "','" + 1 + "')";
                     MySqlCommand cmd1 = new MySqlCommand(strcmd1, con);
                     cmd1.ExecuteNonQuery();
                     //初始化主办方表中的用户信息
                    int id = global.Login(username.Text.Trim(), password.Text.Trim());
-                   strcmd1 = "insert into participant (id) values ('" + id + " ')";
+                  
                    Session["uid"] = id;
                    MySqlCommand cmd2 = new MySqlCommand(strcmd1, con);
                    cmd2.ExecuteNonQuery();
                    Response.Write("<script>alert('注册成功！')</script>");
-                   Response.Redirect("login,aspx", false);
+                   Response.Redirect("login.aspx", false);
                 }
                 else
                 {

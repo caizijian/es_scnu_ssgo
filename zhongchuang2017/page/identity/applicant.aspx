@@ -24,28 +24,35 @@
                         <asp:Label runat="server" Text="团队负责人："></asp:Label>
                         <asp:TextBox ID="teamleader" runat="server"></asp:TextBox>
                         <asp:Label  runat="server" Text="手机号码："></asp:Label>
-                        <asp:TextBox ID="phonenumber" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="tel" runat="server"></asp:TextBox>
                         <asp:Label  runat="server" Text="邮箱："></asp:Label>
-                        <asp:TextBox ID="email" runat="server"></asp:TextBox>
-                        <asp:Label  runat="server" Text="负责人所在学院、专业、年级："></asp:Label>
-                        <asp:TextBox ID="leaderinfo" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="email" runat="server" AutoCompleteType="Email" TextMode="Email"></asp:TextBox>
+                        <asp:Label  runat="server" Text="负责人所在学院："></asp:Label>
+                        <asp:TextBox ID="school" runat="server"></asp:TextBox>
+                        <asp:Label  runat="server" Text="专业："></asp:Label>
+                        <asp:TextBox ID="subject" runat="server"></asp:TextBox>
+                        <asp:Label  runat="server" Text="年级："></asp:Label>
+                        <asp:TextBox ID="grade" runat="server"></asp:TextBox>
                         <asp:Label  runat="server" Text="团队人数："></asp:Label>
-                        <asp:TextBox ID="teamnum" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="num" runat="server"></asp:TextBox>
                         <asp:Label  runat="server" Text="项目类型："></asp:Label>
-                        <asp:DropDownList ID="teamtype" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="type" runat="server"></asp:DropDownList>
                         <asp:Label  runat="server" Text="项目简介："></asp:Label>
-                        <asp:TextBox ID="summary" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="information" runat="server" MaxLength="200"></asp:TextBox>
                         <asp:Label  runat="server" Text="目前所获奖项："></asp:Label>
-                        <asp:TextBox ID="prize" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="award" runat="server"></asp:TextBox>
                         <asp:Label  runat="server" Text="是否工商注册："></asp:Label>
-                        <asp:DropDownList ID="register" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="isregister" runat="server" >
+                            <asp:ListItem Value="0">否</asp:ListItem>
+                            <asp:ListItem Value="1">是</asp:ListItem>
+                        </asp:DropDownList>
                         <asp:Label  runat="server" Text="项目运营情况："></asp:Label>
                         <asp:TextBox ID="situatioin" runat="server"></asp:TextBox>
                         <asp:Label  runat="server" Text="未来运营计划："></asp:Label>
-                        <asp:TextBox ID="future" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="plan" runat="server"></asp:TextBox>
                         <asp:Label  runat="server" Text="希望创院提供的服务："></asp:Label>
-                        <asp:TextBox ID="hope" runat="server"></asp:TextBox>
-                        <asp:Button ID="submit" runat="server" Text="提交" />
+                        <asp:TextBox ID="server" runat="server"></asp:TextBox>
+                        <asp:Button ID="submit" runat="server" Text="提交" OnClick="submit_Click" />
                     </asp:View>
                     <asp:View ID="infotable" runat="server">
                         <asp:Label runat="server" Text="暂无"></asp:Label>
@@ -55,13 +62,13 @@
             </asp:View>
             <asp:View ID="View2" runat="server">
                 <asp:Label  runat="server" Text="商业计划书："></asp:Label>
-                <asp:FileUpload ID="FileUpload1" runat="server" />
-                <asp:Button ID="btnuploadBP" runat="server" Text="提交" />
-                <asp:Label ID="tips1" runat="server" Text=""></asp:Label>
+                <asp:FileUpload ID="FileUpload1" runat="server" accept=".zip"/>
+                <asp:Button ID="btnuploadBP" runat="server" Text="提交" OnClick="btnuploadBP_Click" />
+                <asp:Label ID="tips1" runat="server" Text="" style="width:100px"></asp:Label>
 
                 <asp:Label  runat="server" Text="其他补充材料："></asp:Label>
                 <asp:FileUpload ID="FileUpload2" runat="server" />
-                <asp:Button ID="btnuploadOTHER" runat="server" Text="提交" />
+                <asp:Button ID="btnuploadOTHER" runat="server" Text="提交" OnClick="btnuploadOTHER_Click" />
                 <asp:Label ID="tips2" runat="server" Text=""></asp:Label>
             </asp:View>
             <asp:View ID="View3" runat="server">

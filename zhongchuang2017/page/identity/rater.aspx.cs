@@ -13,5 +13,21 @@ namespace zhongchuang2017.page.identity
         {
 
         }
+
+        protected void MENUBTNCLICK(object sender, EventArgs e)
+        {
+            //获取被触发的Button对象  
+            Button b = (Button)sender;
+            if (b.ID == "btnenter")
+            {
+                //激活View1  
+                MultiView1.SetActiveView(View1);
+            }
+            else
+            {
+                //激活View2  
+                MultiView1.SetActiveView(View2);
+            }
+        }
     }
 }

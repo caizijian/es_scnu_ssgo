@@ -10,7 +10,16 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <asp:Button ID="showdownload" runat="server" Text="下载" OnClick="MENUBTNCLICK"/>
+        <asp:Button ID="showrater" runat="server" Text="投票" OnClick="MENUBTNCLICK"/>
+        <asp:MultiView ID="MultiView1" runat="server">
+            <asp:View ID="View1" runat="server">
+
+            </asp:View>
+            <asp:View ID="View2" runat="server">
+
+            </asp:View>
+        </asp:MultiView>
     </div>
     </form>
 </body>

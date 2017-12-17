@@ -47,13 +47,13 @@ public class global
         }
     }
 
-    public static Int64 Usertype(int id)
+    public static int Usertype(int id)
     {//通过id找到用户类型 1为用户 2为管理员 3为评委
-        string sql = "select type from participant where id=?id";
+        string sql = "select type from user where id=?id";
         MySqlParameter[] p ={
         new MySqlParameter("?id",id) };
         if (mysqlHelp.ExecuteScalar(sql, p) == null) return 0;
-        return (Int64)mysqlHelp.ExecuteScalar(sql, p);
+        return (int)mysqlHelp.ExecuteScalar(sql, p);
     }
 
     public static MySqlDataReader ParticipantInfo(int id)

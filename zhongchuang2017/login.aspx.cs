@@ -45,18 +45,18 @@ namespace zhongchuang2017.page.identity
                     Response.Write("<script>alert('帐号或密码错误')</script>");//提示错误
                     return;
                 }
-
+                Session["uid"] = id;
                 if (global.Usertype(id) == 1)
                 {
-                    Server.Transfer("~/indentity/applicant.aspx");
+                    Server.Transfer("~/page/identity/applicant.aspx");
                 }
                 else if (global.Usertype(id) == 2)
                 {
-                    Server.Transfer("Home.html");
+                    Server.Transfer("~/page/identity/manager.aspx");
                 }
                 else if (global.Usertype(id) == 3)
                 {
-                    Server.Transfer("Home.html");
+                    Server.Transfer("~/page/identity/rater.aspx");
                 }
                 else
                 {

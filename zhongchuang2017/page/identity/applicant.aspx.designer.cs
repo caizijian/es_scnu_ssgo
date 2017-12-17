@@ -121,13 +121,13 @@ namespace zhongchuang2017.page.identity {
         protected global::System.Web.UI.WebControls.TextBox teamleader;
         
         /// <summary>
-        /// phonenumber 控件。
+        /// tel 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox phonenumber;
+        protected global::System.Web.UI.WebControls.TextBox tel;
         
         /// <summary>
         /// email 控件。
@@ -139,58 +139,76 @@ namespace zhongchuang2017.page.identity {
         protected global::System.Web.UI.WebControls.TextBox email;
         
         /// <summary>
-        /// leaderinfo 控件。
+        /// school 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox leaderinfo;
+        protected global::System.Web.UI.WebControls.TextBox school;
         
         /// <summary>
-        /// teamnum 控件。
+        /// subject 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox teamnum;
+        protected global::System.Web.UI.WebControls.TextBox subject;
         
         /// <summary>
-        /// teamtype 控件。
+        /// grade 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList teamtype;
+        protected global::System.Web.UI.WebControls.TextBox grade;
         
         /// <summary>
-        /// summary 控件。
+        /// num 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox summary;
+        protected global::System.Web.UI.WebControls.TextBox num;
         
         /// <summary>
-        /// prize 控件。
+        /// type 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox prize;
+        protected global::System.Web.UI.WebControls.DropDownList type;
         
         /// <summary>
-        /// register 控件。
+        /// information 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList register;
+        protected global::System.Web.UI.WebControls.TextBox information;
+        
+        /// <summary>
+        /// award 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox award;
+        
+        /// <summary>
+        /// isregister 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList isregister;
         
         /// <summary>
         /// situatioin 控件。
@@ -202,22 +220,22 @@ namespace zhongchuang2017.page.identity {
         protected global::System.Web.UI.WebControls.TextBox situatioin;
         
         /// <summary>
-        /// future 控件。
+        /// plan 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox future;
+        protected global::System.Web.UI.WebControls.TextBox plan;
         
         /// <summary>
-        /// hope 控件。
+        /// server 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox hope;
+        protected global::System.Web.UI.WebControls.TextBox server;
         
         /// <summary>
         /// submit 控件。
